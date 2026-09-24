@@ -41,5 +41,7 @@ Phím F10 duyệt mọi Baritone instance đang hoạt động và gọi trực 
 Theo public API Baritone 1.11.3, `cancelEverything()` hủy pathing, path
 calculation và mọi process đang kiểm soát pathing của instance đó. Vì vậy
 thao tác này dừng cả primary instance và các instance Baritone đang hoạt động,
-không chỉ path hiện tại. Nếu Baritone chưa khởi tạo hoặc danh sách instance
-đang rỗng, F10 được bỏ qua an toàn. Không gửi chat command.
+không chỉ path hiện tại. Khi có ít nhất một instance được hủy thành công, mod
+phát âm thanh `emergency_stop.ogg` qua `SoundManager`. Nếu Baritone chưa khởi
+tạo hoặc danh sách instance đang rỗng, F10 được bỏ qua an toàn và không phát
+âm thanh. Không gửi chat command.
