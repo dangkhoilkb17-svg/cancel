@@ -25,6 +25,17 @@ Nếu không dùng Wrapper, có thể chạy `gradle build` với Gradle 8.10 ho
 Build sẽ không hoàn tất nếu thiếu file API Baritone trong `libs/`, vì API này
 không được tải tự động từ Maven trong project.
 
+Project chỉ khai báo hai module Fabric API cần dùng (`fabric-key-binding-api-v1`
+và `fabric-lifecycle-events-v1`) thay vì bundle `fabric-api`, tránh duplicate
+class khi Loom remap trên Windows. Gradle cũng tắt parallel workers và giới hạn
+một worker để build ổn định hơn trên máy có bộ nhớ hạn chế. Nếu daemon cũ bị
+kẹt sau một lần build lỗi, chạy:
+
+```text
+gradlew.bat --stop
+gradlew.bat clean build --no-daemon --max-workers=1
+```
+
 ## Phím
 
 Mặc định: **F10**.
