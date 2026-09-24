@@ -1,0 +1,7 @@
+{
+  "emergency_stop": {
+    "sounds": [
+      "baritone-emergency-stop:emergency_stop"
+    ]
+  }
+}
