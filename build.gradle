@@ -18,7 +18,8 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-key-binding-api-v1:${project.fabric_key_binding_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-lifecycle-events-v1:${project.fabric_lifecycle_version}"
 
     // Official Baritone 1.11.3 API jar for MC 1.21 / 1.21.1.
     // Put: libs/baritone-api-fabric-1.11.3.jar
