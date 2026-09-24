@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "baritone-emergency-stop",
+  "version": "${version}",
+  "name": "Baritone Emergency Stop",
+  "description": "Single-key emergency stop for the primary Baritone instance.",
+  "authors": ["dangkhoilkb17-svg"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.dangkhoilkb17.baritoneemergencystop.BaritoneEmergencyStopClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "1.21.1",
+    "fabric-api": ">=0.116.15",
+    "baritone": ">=1.11.3"
+  }
+}
